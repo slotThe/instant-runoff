@@ -4,12 +4,6 @@
 
 ;;;; Helpers
 
-(defn- value [coll]
-  (second coll))
-
-(defn- name-of [coll]
-  (first coll))
-
 (defn- nth-votes
   "From a pool of votes, get all nth votes.  Returns a map with the
   frequencies for each relevant candidate."
@@ -18,11 +12,18 @@
             (when (< n (count xs))
               (nth xs n)))]
     (frequencies (keep (partial safe-nth n) (vals votes)))))
+;; An entry with an associated score, which represents the votes that
+;; submission received *in some round*.
+(defrecord Entry [name score])
 
 (defn- partition-by-values
-  "Partition a map of votes by value."
+  "Partition a map of votes by the scores of the entries.  Returns a list
+  of `Entry`s."
   [votes]
-  (partition-by value (sort-by value votes)))
+  (->> votes
+       (sort-by second)                 ; value
+       (map (fn [[k v]] (->Entry k v))) ; cries in `curry`
+       (partition-by :score)))
 
 ;;;; Parsing
 
@@ -88,9 +89,9 @@
       (when (<= n max-length)
         (let [nthvotes  (nth-votes n votes)
               cands     (map #(vector % (get nthvotes % 0)) candidates)
-              min-cands (first (partition-by-values cands))]
+              min-cands (map :name (first (partition-by-values cands)))]
           (if (= 1 (count min-cands))
-            (map name-of min-cands)
+            min-cands
             (recur (inc n) min-cands)))))))
 
 (defn- tie-break
@@ -106,15 +107,13 @@
   (let [sorted-votes (partition-by-values first-votes)
         lows         (first sorted-votes)]
     (if (or (= 1 (count lows))
-            (< (apply + (map value lows))
-               (or (value (first (second sorted-votes))) ; possible next value
+            (< (apply + (map :score lows))
+               (or (:score (first (second sorted-votes))) ; possible next value
                    0)))
-      (map name-of lows)
-      (if-let [least-nth (least-nth-votes votes lows)]
+      (map :name lows)
+      (if-let [least-nth (least-nth-votes votes (map :name lows))]
         least-nth
-        (do
-          (println "Selecting randomly...")
-          [(name-of (rand-nth lows))])))))
+        [(:name (rand-nth lows))]))))
 
 ;;;; Instant runoff
 
