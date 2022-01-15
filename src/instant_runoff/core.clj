@@ -7,11 +7,12 @@
 (defn- nth-votes
   "From a pool of votes, get all nth votes.  Returns a map with the
   frequencies for each relevant candidate."
-  [n votes]
-  (letfn [(safe-nth [n xs]
+  [^long n votes]
+  (letfn [(safe-nth [xs]
             (when (< n (count xs))
               (nth xs n)))]
-    (frequencies (keep (partial safe-nth n) (vals votes)))))
+    (frequencies (keep safe-nth (into [] (vals votes))))))
+
 ;; An entry with an associated score, which represents the votes that
 ;; submission received *in some round*.
 (defrecord Entry [name score])
