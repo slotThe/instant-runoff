@@ -108,13 +108,13 @@
   (let [sorted-votes (partition-by-values first-votes)
         lows         (first sorted-votes)]
     (if (or (= 1 (count lows))
-            (< (apply + (map :score lows))
-               (or (:score (first (second sorted-votes))) ; possible next value
+            (< (apply + (map :score lows))                ; 1.
+               (or (:score (first (second sorted-votes)))
                    0)))
       (map :name lows)
       (if-let [least-nth (least-nth-votes votes (map :name lows))]
-        least-nth
-        [(:name (rand-nth lows))]))))
+        least-nth                                         ; 2.
+        [(:name (rand-nth lows))]))))                     ; 3.
 
 ;;;; Instant runoff
 
@@ -126,8 +126,7 @@
           elims          (tie-break votes first-votes)
           ;; Re-calculate this in every round in case all of people's
           ;; votes become void (in which case they are removed).
-          barrier        (quot (apply + (vals first-votes)) 2)
-          ]
+          barrier        (quot (apply + (vals first-votes)) 2)]
       (if (> hi-val barrier)
         [[hi-kw hi-val] (conj rounds {:votes votes})] ; > 50% ⇒ only one winner
         (recur (into {}
