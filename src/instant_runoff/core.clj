@@ -102,9 +102,8 @@
     2. If there is a candidate with fewer nth place votes than all
        others, eliminate that one.
     3. Otherwise, randomly eliminate someone."
-  [votes]
-  (let [first-votes  (nth-votes 0 votes)
-        sorted-votes (partition-by-values first-votes)
+  [votes first-votes]
+  (let [sorted-votes (partition-by-values first-votes)
         lows         (first sorted-votes)]
     (if (or (= 1 (count lows))
             (< (apply + (map value lows))
@@ -124,7 +123,7 @@
          rounds []]
     (let [first-votes    (nth-votes 0 votes)
           [hi-kw hi-val] (apply max-key val first-votes)
-          elims          (tie-break votes)
+          elims          (tie-break votes first-votes)
           ;; Re-calculate this in every round in case all of people's
           ;; votes become void (in which case they are removed).
           barrier        (quot (apply + (vals first-votes)) 2)
