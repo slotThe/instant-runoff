@@ -78,18 +78,20 @@
 (defn- least-nth-votes
   "Check which (if any) of the given candidates has the least nth votes,
   for every sensible n larger than 0 (i.e., do not check first choice
-  votes and stop when all lists are empty).  Returns nil if there is a
-  tie all the way through."
-  [votes candidates]
+  votes and stop when all lists are empty).  Only advances to rank n+1
+  with the lowest ranking submissions from rank n.
+
+  Returns `nil` if there is a tie all the way through."
+  [votes cs]
   (let [max-length (apply max (map (comp count second) votes))]
-    (loop [n 1]
+    (loop [n 1, candidates cs]
       (when (<= n max-length)
-        (let [nthvotes (nth-votes n votes)
-              cands    (map #(vector % (get nthvotes % 0)) candidates)
-              min-cand (first (partition-by-values cands))]
-          (if (= 1 (count min-cand))
-            min-cand
-            (recur (inc n))))))))
+        (let [nthvotes  (nth-votes n votes)
+              cands     (map #(vector % (get nthvotes % 0)) candidates)
+              min-cands (first (partition-by-values cands))]
+          (if (= 1 (count min-cands))
+            (map name-of min-cands)
+            (recur (inc n) min-cands)))))))
 
 (defn- tie-break
   "If necessary—i.e., if there are multiple candidates with the lowest
