@@ -28,33 +28,50 @@
 
 ;;;; Parsing
 
-(defn- correct [w]                      ; TODO: fill out
-  w)
+(defn- correct [w]
+  (case w
+    "сonstructor"            "constructor"              ; cyrillic `c`
+    "miminalist"             "minimalist"
+    "submission 2"           "muelphil's submission 2"
+    "lambda x"               "lambda-x"
+    "racoon (ofc)"           "racoon"
+    "pheonix"                "phoenix"
+    "pohenix"                "phoenix"
+    "minimal xm2"            "minimal xm 2"
+    "minimal xm1"            "minimal xm 1"
+    "curvy meets x"          "curvy wide"
+    "curvey wide"            "curvy wide"
+    "muelphils submission 2" "muelphil's submission 2"
+    "4 screens"              "4screens"
+    ;; assumptions (non-critical)
+    "modern basic"           "modern basic 1"
+    "minimal xm"             "minimal xm 1"
+    w))
 
 (defn- parse-line [l]
-  (case (correct (str/lower-case (str/replace-first l #"\d+.\s+" "")))
+  (case (correct (str/lower-case (str/replace-first l #"\s*\d+.\s*" "")))
     "lambda-x"                    :lambda-x
     "vmon"                        :vmon
     "crowbar"                     :Crowbar
-    "сonstructor"                 :Сonstructor
+    "constructor"                 :Constructor
     "minimal xm 2"                :Minimal-XM-2
-    "xclock x"                    :Clock
+    "xclock"                      :XClock
     "curvy wide"                  :curvy-wide
     "homenad"                     :Homenad
     "gradient patriot"            :Gradient-Patriot
     "monado"                      :monado
-    "ssfwshutterbug's submission" :ssfwshutterbug's-submission
+    "ssfwshutterbug's submission" :ssfw's-sub
     "x >>="                       :X->>=
     "wide x v1"                   :Wide-X-v1
     "xmonad spaces"               :XMonad-Spaces
     "phoenix"                     :Phoenix
     "greenmonad"                  :greenmonad
-    "muelphil's submission 2"     :muelphil's-submission-2
+    "muelphil's submission 2"     :mp's-sub-2
     "xmondrian"                   :XMondrian
     "haskell meets x"             :Haskell-meets-X
     "new monad"                   :New-Monad
     ">x="                         :>X=
-    "bugreporteur's submission"   :bugreporteur's-submission
+    "bugreporteur's submission"   :bugrep's-sub
     "4screens"                    :four-screens
     "modern basic 2"              :Modern-Basic-2
     "modern basic 1"              :Modern-Basic-1
