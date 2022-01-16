@@ -104,7 +104,7 @@
   [votes cs]
   (let [max-length (apply max (map (comp count second) votes))]
     (loop [n 1, candidates cs]
-      (when (<= n max-length)
+      (when (< n max-length)
         (let [nthvotes  (nth-votes n votes)
               cands     (map #(vector % (get nthvotes % 0)) candidates)
               min-cands (map :name (first (partition-by-values cands)))]
