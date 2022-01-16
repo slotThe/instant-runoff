@@ -163,25 +163,27 @@
                   (map (fn [[k v]] [(name k) v]))
                   (nth-votes 0 votes)))
           (align [n s]
-            (apply str (take n (apply str s (repeat n \space)))))
-          (align-coll [votes cur-row]
-            (mapv (partial align (apply max (map count (vals votes))))
-                  cur-row))]
+            (apply str (take n (apply str s (repeat n \space)))))]
 
     (let [input (parse (slurp "resources/input.txt"))
           [[win win-val] & rounds] (instant-runoff input)]
 
       ;; individual rounds
       (doseq [[n {:keys [elims votes]}] (apply map vector (range) rounds)]
-        (delim)
-        (println "Round" (inc n) "first-choice votes:" (first-choice votes))
-        (println "Eliminating:" (mapv name elims))
-        (println "Remaining votes:")
-        (doseq [[v vs] votes]
-          (println "  "
-                   (align 20 (str (name v) ":"))
-                   (align-coll votes (mapv name vs))))
-        (println ""))
+        (let [align-by      ; max length of a name in the current column
+              (->> (vals votes)
+                   (into #{} cat)
+                   (map (comp count name))
+                   (apply max))]
+          (delim)
+          (println "Round" (inc n) "first-choice votes:" (first-choice votes))
+          (println "Eliminating:" (mapv name elims))
+          (println "Remaining votes:")
+          (doseq [[v vs] votes]
+            (println "  "
+                     (align 20 (str (name v) ":"))
+                     (mapv (partial align align-by) (mapv name vs))))
+          (println "")))
 
       (delim)
       (println "End result:" (name win) "wins with" win-val "first-choice votes")
