@@ -1,0 +1,655 @@
+Francesco Ariis
+1. Gradient Patriot
+2. Phoenix
+3. Constructor
+4. miminalist
+5. XMondrian
+
+mito
+1. minimalist
+2. muelphil's submission 2
+3. Crowbar
+4. Haskell meets X
+5. Gradient Patriot
+
+Martin Alpers
+1. Haskell meets X
+2. New Monad
+3. >X=
+4. curvy wide
+5. Crowbar
+6. Phoenix
+7. minimalist
+
+la-ninpre
+     1.    lambda-x
+     2.    minimalist
+     3.    gradient patriot
+     4.    curvy wide
+     5.    monado
+     6.    xemonad
+     7.    submission 2
+
+geekosaur
+     1.    Haskell meets X
+     2.    New Monad
+     3.    XPinWheel
+     4.    powermonad
+     5.    minimalist
+
+NiHaiden
+     1.    Phoenix
+     2.    Homenad
+     3.    Gradient Patriot
+     4.    Crowbar
+     5.    Modern Basic 1
+
+emptyflask
+     1.    Phoenix
+     2.    curvy wide
+     3.    crowbar
+     4.    Haskell meets X
+     5.    minimalist
+     6.    Xemonad
+     7.    Gradient Patriot
+     8.    X >>=
+
+literallyunplayable
+     1.    minimalist
+     2.    phoenix
+     3.    modern basic 2
+     4.    lambda x
+     5.    minimal xm 1
+     6.    monado
+     7.    minimal xm 2
+     8.    gradient patriot
+
+bubblegumbubble
+     1.    minimalist
+     2.    Сonstructor
+     3.    Haskell meets X
+     4.    bugreporteur's submission
+     5.    muelphil's submission 2
+
+MikeValo
+     1. racoon (ofc)
+     2. minimalist
+     3. xemonad
+     4. minimal xm 2
+     5. crowbar
+
+UlisesAlexanderAM
+     1.    Haskell meets X
+     2.    minimalist
+     3.    XMondrian
+     4.    Phoenix
+     5.    X >>=
+
+mgsloan
+     1. curvy wide
+     2. Phoenix
+     3. XMondrian
+     4. minimalist
+     5. racoon
+
+psibi
+     1.    Gradient Patriot
+     2.    Pheonix
+     3.    Haskell meets X
+     4.    minimalist
+     5.    Xmonovad
+
+byte-wolf
+     1.    Phoenix
+     2.    Monado
+     3.    curvy wide
+     4.    minimalist
+     5.    Gradient Patriot
+     6.    Haskell meets X
+     7.    lambda-x
+
+kronn
+     1.    minimalist
+     2.    Haskell meets X
+     3.    Modern Basic 2
+     4.    Phoenix
+     5.    Crowbar
+     6.    Minimal XM 2
+     7.    X >>=
+     8.    monado
+     9.    muelphils submission 2
+    10.    racoon
+
+17bell11
+     1.    Phoenix
+     2.    curvy wide
+     3.    Haskell meets X
+     4.    minimalist
+     5.    Crowbar
+
+TonyTheAce
+     1.    Haskell meets X
+     2.    Crowbar
+     3.    Phoenix
+     4.    minimalist
+     5.    Monado
+
+muelphil
+     1.    curvy wide
+     2.    Modern Basic 2
+     3.    Minimal XM 1
+     4.    Minimal XM 2
+     5.    vmon
+     6.    X >>=
+     7.    Haskell meets X
+     8.    XMonad Spaces
+
+sytek1
+     1.    curvy wide
+     2.    minimalist
+     3.    Phoenix
+     4.    Haskell meets X
+     5.    Gradient Patriot
+
+astynax
+     1.    curvy wide
+     2.    lambda-x
+     3.    Phoenix
+     4.    minimalist
+     5.    XMonad Spaces
+
+array-in-a-matrix
+     1.    New Monad
+     2.    Minimal XM 2
+     3.    Phoenix
+     4.    Crowbar
+     5.    Gradient Patriot
+
+viriuwu
+     1.    minimalist
+     2.    curvy wide
+     3.    phoenix
+     4.    muelphil's submission 2
+     5.    haskell meets x
+     6.    new monad
+     7.    lambda-x
+     8.    crowbar
+     9.    gradient patriot
+    10.    xclock
+
+TheMC47
+     1.    minimalist
+     2.    Modern Basic 2
+     3.    Haskell meets X
+     4.    Crowbar
+     5.    curvy wide
+     6.    lambda-x
+
+aij
+     1.    curvy wide
+     2.    Crowbar
+     3.    XMondrian
+     4.    Haskell meets X
+     5.    bugreporteur's submission
+     6.    Phoenix
+     7.    lambda-x
+
+agnantis
+     1.    minimalist
+     2.    Minimal XM 2
+     3.    curvy wide
+     4.    Gradient Patriot
+     5.    muelphil's submission 2
+
+slotThe
+     1.    curvy wide
+     2.    minimalist
+     3.    Haskell meets X
+     4.    Phoenix
+     5.    Minimal XM 1
+     6.    Gradient Patriot
+     7.    Minimal XM 2
+     8.    Crowbar
+
+liskin
+     1.    minimalist
+     2.    Modern Basic 2
+     3.    Minimal XM 1
+     4.    Phoenix
+     5.    Crowbar
+     6.    Modern Basic 1
+
+noaccOS
+     1.    minimalist
+     2.    curvy wide
+     3.    Gradient Patriot
+     4.    Pohenix
+     5.    monado
+
+wineee
+     1. Haskell meets X
+     2. Phoenix
+     3. monado
+     4. Gradient Patriot
+     5. powermonad
+
+leohanyan
+     1.    Monado
+     2.    Phoenix
+     3.    Minimalist
+     4.    Crowbar
+     5.    Powermonad
+
+kolmodin
+     1.    minimalist
+     2.    Crowbar
+     3.    muelphil's submission 2
+     4.    Haskell meets X
+     5.    Gradient Patriot
+
+adokce
+     1.    curvy wide
+     2.    muelphil's submission 2
+     3.    Xmonovad
+     4.    Haskell meets X
+     5.    vmon
+
+wejn
+     1.    Crowbar
+     2.    curvy wide
+     3.    Phoenix
+     4.    X >>=
+     5.    Xemonad
+     6.    minimalist
+     7.    Gradient Patriot
+
+11xx
+     1.    minimalist
+     2.    Haskell meets X
+     3.    Modern Basic 2
+     4.    Modern Basic 1
+     5.    Gradient Patriot
+
+Kritiqual
+     1.    Pheonix
+     2.    Curvy wide
+     3.    Haskell meets x
+     4.    Modern basic 1
+     5.    >X=
+
+brunefig
+     1.    minimalist
+     2.    curvy wide
+     3.    Haskell meets X
+     4.    Gradient Patriot
+     5.    XMondrian
+     6.    New Monad
+     7.    >X=
+
+stridervc
+     1.    curvy wide
+     2.    Phoenix
+     3.    Gradient Patriot
+     4.    Modern Basic 1
+     5.    4screens
+
+herecy
+     1.    Phoenix
+     2.    XMonad Spaces
+     3.    Haskell meets X
+     4.    minimalist
+     5.    curvy wide
+
+nomeata
+     1.    minimalist
+     2.    Haskell meets X
+     3.    Phoenix
+     4.    Gradient Patriot
+     5.    New Monad
+
+eshrh
+     1.    minimalist
+     2.    Phoenix
+     3.    Haskell meets X
+     4.    curvy wide
+     5.    Gradient Patriot
+
+CantoroMC
+     1.    curvy wide
+     2.    monado
+     3.    Haskell meets X
+     4.    >X=
+     5.    Modern Basic 1
+
+superdamo
+     1.    minimalist
+     2.    Haskell meets X
+     3.    Phoenix
+     4.    Gradient patriot
+     5.    Crowbar
+
+l29ah
+     1. haskell meets x
+     2. homenad
+     3. gradient patriot
+     4. minimalist
+     5. constructor
+     6. new monad
+     7. phoenix
+
+YakBarber
+     1.    Haskell meets X
+     2.    minimalist
+     3.    X >>=
+     4.    crowbar
+     5.    Gradient Patriot
+     6.    Phoenix
+
+kelvin-273
+     1. Minimalist
+     2. Minimal XM2
+     3. Pheonix
+     4. Curvy meets X
+     5. Minimal XM1
+     6. Haskell Meets X
+
+kcrunnels1515
+     1.    curvey wide
+     2.    Modern Basic 1
+     3.    powermonad
+     4.    X >>=
+     5.    Crowbar
+     6.    Haskell Meets X
+
+sangster
+     1.    Haskell meets X
+     2.    New Monad
+     3.    curvy wide
+     4.    Phoenix
+     5.    muelphil's submission 2
+     6.    Modern Basic 1
+     7.    Crowbar
+
+thedward
+     1.    Phoenix
+     2.    Minimal XM 1
+     3.    New Monad
+     4.    Crowbar
+     5.    Minimal XM 2
+     6.    muelphil's submission 2
+
+Aditeya
+     1.    minimalist
+     2.    New Monad
+     3.    Gradient Patriot
+     4.    Haskell meets X
+     5.    XClock
+     6.    vmon
+     7.    4screens
+     8.    Modern Basic 1
+
+oneself
+     1.    Modern Basic 1
+     2.    minimalist
+     3.    Haskell meets X
+     4.    4screens
+
+texttheater
+     1.    4 screens
+     2.    Modern Basic 2
+     3.    Constructor
+     4.    curvy wide
+     5.    Homenad
+
+eugene-reim
+     1.    Phoenix
+     2.    Gradient Patriot
+     3.    minimalist
+     4.    curvy wide
+     5.    Minimal XM 1
+     6.    vmon
+     7.    lambda-x
+     8.    monado
+     9.    Minimal XM 2
+
+Vvamp
+     1.    Minimal XM 2
+     2.    Lambda X
+     3.    Curvy wide
+     4.    Minimalist
+     5.    Gradient Patriot
+
+SmoollBrain
+     1.    Monado
+     2.    4screens
+     3.    Crowbar
+     4.    Phoenix
+     5.    minimalist
+
+greenbourne277
+     1.    XMondrian
+     2.    monado
+     3.    minimalist
+     4.    Minimal XM 2
+     5.    Modern Basic 2
+
+CyanideForBreakfast
+     1.    minimalist
+     2.    Haskell meets X
+     3.    New Monad
+     4.    X >>=
+     5.    Modern Basic 1
+
+emiham
+     1.    minimalist
+     2.    curvy wide
+     3.    Phoenix
+     4.    Gradient Patriot
+     5.    Haskell meets X
+
+tim-kilian
+     1.    curvy wide
+     2.    Minimal XM
+     3.    minimalist
+     4.    Сonstructor
+     5.    Haskell meets X
+     6.    Phoenix
+     7.    lambda-x
+
+jerri
+     1.    Phoenix
+     2.    Haskell meets X
+     3.    minimalist
+
+gvolpe
+     1.    curvy wide
+     2.    minimalist
+     3.    phoenix
+     4.    crowbar
+     5.    gradient patriot
+
+progo
+     1.    Minimalist
+     2.    Homenad
+     3.    Curvy Wide
+     4.    Phoenix
+     5.    Modern Basic 2
+
+EricGebhart
+     1. curvy wide
+     2. Crowbar
+     3. Haskell meets X
+     4. Xmonad spaces
+     5. Modern Basic
+
+eyenx
+     1.    Haskell meets X
+     2.    minimalist
+     3.    New Monad
+     4.    Modern Basic 1
+     5.    Crowbar
+
+permelin
+     1.    minimalist
+     2.    curvy wide
+     3.    Gradient Patriot
+     4.    Phoenix
+     5.    X >>=
+     6.    Haskell meets X
+     7.    Minimal XM 2
+     8.    Minimal XM 1
+
+amir
+     1.    curvy wide
+     2.    Gradient Patriot
+     3.    Phoenix
+     4.    minimalist
+     5.    Modern Basic 1
+
+edunfelt
+     1.    curvy wide
+     2.    Phoenix
+     3.    vmon
+     4.    XMondrian
+     5.    Crowbar
+     6.    Modern Basic 2
+     7.    Constructor
+     8.    minimalist
+
+aburtsev
+     1.    Haskell meets X
+     2.    Modern Basic 2
+     3.    X >>=
+     4.    Gradient Patriot
+     5.    minimalist
+
+turboMaCk
+     1.    Haskell meets X
+     2.    minimalist
+     3.    Phoenix
+     4.    Gradient Patriot
+     5.    New Monad
+
+davama
+     1.    minimalist
+     2.    Haskell meets X
+     3.    X >>=
+     4.    curvy wide
+     5.    XClock
+
+lukasjuhrich
+     1.    Haskell meets X
+     2.    Phoenix
+     3.    minimalist
+     4.    bugreporteur's submission
+     5.    curvy wide
+
+stepnem
+     1.    XClock
+     2.    minimalist
+     3.    lambda-x
+     4.    Constructor
+     5.    muelphil's submission 2
+     6.    racoon
+
+vrs
+     1.    Phoenix
+     2.    Gradient Patriot
+     3.    minimalist
+     4.    curvy wide
+     5.    Haskell meets X
+
+idmitrymolchanov
+     1.    lambda-x
+     2.    Modern Basic 1
+     3.    powermonad
+     4.    Haskell meets X
+     5.    XClock
+
+orsll
+     1.    minimalist
+     2.    Haskell meets X
+     3.    curvy wide
+     4.    Phoenix
+     5.    Gradient Patriot
+     6.    lambda-x
+     7.    Crowbar
+
+dschrempf
+     1.    monado
+     2.    Haskell meets X
+     3.    minimalist
+     4.    curvy wide
+     5.    Modern Basic 2
+     6.    Modern Basic 1
+
+mdemaredeb
+     1.    Gradient Patriot
+     2.    minimalist
+     3.    Crowbar
+     4.    X >>=
+     5.    curvy wide
+
+janbina
+     1.    Minimal XM 2
+     2.    Minimal XM 1
+     3.    X >>=
+     4.    minimalist
+     5.    Сonstructor
+
+akkerman
+     1.    Haskell meets X
+     2.    Crowbar
+     3.    Minimalist
+     4.    curvy wide
+     5.    Phoenix
+
+judeka
+     1.    minimalist
+     2.    curvy wide
+     3.    monado
+     4.    Minimal XM 2
+     5.    Constructor
+
+int-index
+     1.    curvy wide
+     2.    minimalist
+     3.    XClock
+     4.    Haskell meets X
+     5.    Сonstructor
+
+ken-scarf
+     1.    muelphil's submission 2
+     2.    curvy wide
+     3.    minimalist
+     4.    4screens
+
+ento
+     1.    racoon
+     2.    Xemonad
+     3.    curvy wide
+     4.    Phoenix
+     5.    XMonad Spaces
+
+Pitometsu
+     1.    X >>=
+     2.    curvy wide
+     3.    Haskell meets X
+     4.    minimalist
+     5.    Сonstructor
+     6.    Minimal XM 1
+     7.    Minimal XM 2
+
+hw0lff
+     1.    minimalist
+     2.    Crowbar
+     3.    New Monad
+     4.    Haskell meets X
+     5.    xemonad
+     6.    >X=
+     7.    Gradient Patriot
+     8.    curvy wide
+     9.    muelphil's submission 2
+    10.    vmon
+    11.    Phoenix
+    12.    Modern Basic 2
