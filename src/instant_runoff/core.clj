@@ -139,25 +139,41 @@
 ;;;; Pretty things
 
 (defn -main [& _args]
-  (let [delim (fn [] (println (apply str (repeat 72 "-"))))
-        input (parse nil)                       ; TODO
-        [[win win-val] & rounds] (instant-runoff input)]
-    (doseq [[n {:keys [elims votes]}] (apply map vector (range) rounds)]
+  (letfn [(delim []
+            (println (apply str (repeat 72 "-"))))
+          (first-choice [votes]
+            (into {}
+                  (map (fn [[k v]] [(name k) v]))
+                  (nth-votes 0 votes)))
+          (align [n s]
+            (apply str (take n (apply str s (repeat n \space)))))
+          (align-coll [votes cur-row]
+            (mapv (partial align (apply max (map count (vals votes))))
+                  cur-row))]
+
+    (let [input (parse (slurp "resources/input.txt"))
+          [[win win-val] & rounds] (instant-runoff input)]
+
+      ;; individual rounds
+      (doseq [[n {:keys [elims votes]}] (apply map vector (range) rounds)]
+        (delim)
+        (println "Round" (inc n) "first-choice votes:" (first-choice votes))
+        (println "Eliminating:" (mapv name elims))
+        (println "Remaining votes:")
+        (doseq [[v vs] votes]
+          (println "  "
+                   (align 20 (str (name v) ":"))
+                   (align-coll votes (mapv name vs))))
+        (println ""))
+
       (delim)
-      (println (str "Eliminating " (mapv name elims) " in round " (inc n)))
+      (println "End result:" (name win) "wins with" win-val "first-choice votes")
       (delim)
-      (println (str "Remaining votes:"))
-      (doseq [[v vs] votes]
-        (println (str "  " (name v) "'s votes: " (mapv name vs))))
-      (println ""))
-    (delim)
-    (println (str "End result: "
-                  (name win) " wins with "
-                  win-val " first votes"))
-    (delim)
-    ;; Just making sure :)
-    (reduce (fn [mmm _]
-              (let [[[win _] & _] (instant-runoff input)]
-                (merge-with + mmm {win 1})))
-            {}
-            (range 0 1000))))
+
+      ;; Just making sure :)
+      (println "Running the election 100 times, just for fun:"
+               (reduce (fn [mmm _]
+                         (let [[[win _] & _] (instant-runoff input)]
+                           (merge-with + mmm {win 1})))
+                       {}
+                       (range 0 100))))))
